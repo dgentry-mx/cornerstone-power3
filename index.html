@@ -457,7 +457,7 @@
 			<section class="video-embed has-bg-lightgray">
 				<div class="video-embed__inner">
 					<div class="video-embed__container">
-						<iframe class="vidyard_iframe" src="//play.vidyard.com/HVCXsdmXCyHS7UJfpJ7LmQ.html?" width=640 height=360 scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+						<iframe class="vidyard_iframe" src="//play.vidyard.com/HVCXsdmXCyHS7UJfpJ7LmQ.html?" width=640 height=360 scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen></iframe>	
 					</div>
 				</div>
 			</section>
@@ -492,6 +492,16 @@
 					const href = $(this).attr("href");
 					// 3 
 					$("html, body").animate({ scrollTop: $(href).offset().top }, 700);
+					});
+
+					$(window).scroll(function() {
+	 
+						if ($(this).scrollTop() > 50){  
+							$('.jump-links').addClass("affix");
+						}
+						else{
+							$('.jump-links').removeClass("affix");
+						}
 					});
 			</script>
 		</main>

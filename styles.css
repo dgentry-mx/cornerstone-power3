@@ -249,8 +249,20 @@
   }
 }
 #jukebox-app #pf-microsite .jump-links {
-  padding: 0 0 10px;
+  padding: 10px 0 10px;
   margin-top: -10px;
+  background-color: transparent;
+  transition: 200ms cubic-bezier(0.4, 0, 1, 1);
+}
+#jukebox-app #pf-microsite .jump-links.affix {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #ffffff;
 }
 @media (min-width: 480px) {
   #jukebox-app #pf-microsite .jump-links {
@@ -259,8 +271,8 @@
 }
 @media (min-width: 768px) {
   #jukebox-app #pf-microsite .jump-links {
-    margin-top: -58px;
-    padding: 10px 0 20px;
+    margin-top: -64px;
+    padding: 17px 0;
   }
 }
 #jukebox-app #pf-microsite .jump-links__inner {
